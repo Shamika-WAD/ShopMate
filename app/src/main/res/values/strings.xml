@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShopMate</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_inventory">Inventory</string>
+    <string name="nav_billing">Billing</string>
+    <string name="nav_alerts">Alerts</string>
+    <string name="nav_sales">Sales</string>
+
+    <!-- Dashboard -->
+    <string name="welcome_shop">Welcome to %1$s</string>
+    <string name="today_sales">Today\'s sales</string>
+    <string name="bills_today">Bills today</string>
+    <string name="low_stock_items">Low stock items</string>
+    <string name="expiring_soon_items">Expiring soon</string>
+    <string name="quick_actions">Quick actions</string>
+    <string name="new_sale">New sale</string>
+    <string name="add_product">Add product</string>
+    <string name="view_sales">View sales</string>
+    <string name="settings">Settings</string>
+
+    <!-- Inventory -->
+    <string name="search_hint">Search name or barcode</string>
+    <string name="no_products">No products yet.\nTap + to add your first product.</string>
+    <string name="product_saved">Product saved</string>
+    <string name="barcode_used">This barcode is already used by another product</string>
+    <string name="confirm_delete_title">Delete product?</string>
+    <string name="confirm_delete_msg">Delete \"%1$s\"? Past bills will keep its name.</string>
+    <string name="no_category">General</string>
+    <string name="stock_count">Stock: %1$d</string>
+    <string name="low_badge">LOW STOCK</string>
+    <string name="exp_label">Exp: %1$s</string>
+
+    <!-- Product form -->
+    <string name="screen_product">Product</string>
+    <string name="product_name">Product name</string>
+    <string name="barcode">Barcode</string>
+    <string name="category">Category</string>
+    <string name="unit">Unit (pcs, kg…)</string>
+    <string name="cost_price">Cost price (optional)</string>
+    <string name="selling_price">Selling price</string>
+    <string name="stock_qty">Stock quantity</string>
+    <string name="low_stock_threshold">Low stock alert at</string>
+    <string name="expiry_none">No expiry date — tap to set</string>
+    <string name="expiry_set">Expiry: %1$s</string>
+    <string name="save">Save</string>
+    <string name="required">Required</string>
+    <string name="scan">Scan</string>
+
+    <!-- Billing -->
+    <string name="scan_item">Scan item</string>
+    <string name="add_manually">Search product</string>
+    <string name="cart_empty">Cart is empty.\nScan a product to start billing.</string>
+    <string name="items_count">Items: %1$d</string>
+    <string name="charge">Charge</string>
+    <string name="charge_amount">Charge %1$s</string>
+    <string name="clear">Clear</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="discount_optional">Discount (optional)</string>
+    <string name="total">Total</string>
+    <string name="payment_method">Payment method</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="confirm">Confirm</string>
+    <string name="checkout">Checkout</string>
+    <string name="unknown_barcode">Unknown product</string>
+    <string name="unknown_barcode_msg">No product found with barcode \"%1$s\". Add it now?</string>
+    <string name="add">Add</string>
+    <string name="not_enough_stock">Not enough stock for \"%1$s\"</string>
+    <string name="no_products_to_add">No products in inventory yet. Add products first.</string>
+    <string name="no_match">No products match \"%1$s\"</string>
+    <string name="select_product">Select product</string>
+
+    <!-- Receipt -->
+    <string name="receipt">Receipt</string>
+    <string name="share">Share</string>
+    <string name="close">Close</string>
+
+    <!-- Alerts -->
+    <string name="low_stock_header">Low stock</string>
+    <string name="low_stock_empty">No low stock items 🎉</string>
+    <string name="expiring_header">Expiring soon</string>
+    <string name="expiring_empty">Nothing expiring soon 🎉</string>
+    <string name="only_left">%1$d left · alert at %2$d</string>
+    <string name="expires_in">Expires in %1$d d · %2$s</string>
+    <string name="expires_today">Expires today · %1$s</string>
+    <string name="expired_days_ago">Expired %1$d d ago · %2$s</string>
+
+    <!-- Sales -->
+    <string name="no_sales">No sales yet.\nCompleted bills will appear here.</string>
+    <string name="sale_items_summary">%1$d items • %2$s</string>
+
+    <!-- Scanner -->
+    <string name="screen_scan">Scan barcode</string>
+    <string name="point_camera">Point the camera at a barcode</string>
+    <string name="camera_error">Could not open the camera</string>
+    <string name="camera_permission_denied">Camera permission is needed to scan barcodes</string>
+
+    <!-- Settings -->
+    <string name="shop_name">Shop name</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone number</string>
+    <string name="footer_note">Footer note</string>
+    <string name="currency_symbol">Currency symbol (Rs., $…)</string>
+    <string name="expiry_warn_days">Warn before expiry (days)</string>
+    <string name="default_threshold">Default low stock level</string>
+    <string name="data_backup">Data &amp; backup</string>
+    <string name="export_products">Export inventory (CSV)</string>
+    <string name="export_sales">Export sales (CSV)</string>
+    <string name="export_ready">Share CSV export</string>
+    <string name="load_demo">Load demo products</string>
+    <string name="demo_loaded">Demo products added — try scanning them!</string>
+    <string name="settings_saved">Settings saved</string>
+    <string name="settings_note">Demo products help you try billing &amp; alerts quickly — print or display the sample barcodes listed in the README. CSV files open in Excel.</string>
+
+    <!-- Receipt screen & thermal printer -->
+    <string name="receipt_preview">Receipt preview</string>
+    <string name="receipt_number">#%1$d</string>
+    <string name="print">Print</string>
+    <string name="printing">Printing…</string>
+    <string name="printed">Bill printed</string>
+    <string name="done">Done</string>
+    <string name="sale_open_error">Could not open this sale</string>
+    <string name="printer_header">Receipt printer (Bluetooth)</string>
+    <string name="printer_none">No printer selected — pair it in Android Bluetooth settings, then tap "Select printer".</string>
+    <string name="printer_set">Printer: %1$s</string>
+    <string name="select_printer">Select printer</string>
+    <string name="test_print">Test print</string>
+    <string name="no_paired">No paired Bluetooth devices found. Pair your thermal printer in Android Settings → Bluetooth first.</string>
+    <string name="printer_saved">Printer saved: %1$s</string>
+    <string name="bt_permission">Bluetooth permission is needed to use the printer</string>
+
+    <!-- Barcode generator -->
+    <string name="barcode_title">Barcode</string>
+    <string name="generate_code">Generate code</string>
+    <string name="generated_code">Generated: %1$s</string>
+    <string name="view_barcode">View barcode</string>
+    <string name="share_barcode">Share barcode image</string>
+    <string name="ean13">EAN-13</string>
+    <string name="code128">Code 128</string>
+    <string name="barcode_ean_error">EAN-13 works only with 12–13 digit numbers — try Code 128 instead.</string>
+    <string name="barcode_hint">Codes starting with "20" are reserved for in-store use and never clash with factory barcodes. Share the image to print stickers from any computer or label app.</string>
+    <string name="stock_minus">Reduce stock</string>
+    <string name="stock_plus">Add stock</string>
+
+    <!-- Common -->
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="ok">OK</string>
+    <string name="error_generic">Something went wrong</string>
+
+    <string name="appearance">Appearance</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <string name="col_item_qty">Item (qty)</string>
+    <string name="qty_price">%1$d × %2$s</string>
+    <string name="discount">Discount</string>
+    <string name="paid_by">Paid by</string>
+    <string name="bill_text_header">Bill text</string>
+    <string name="bill_text_tip">This card looks like your real bill. Tap the address lines or the thank-you message and type (press Enter for more lines) — then press Save above.</string>
+    <string name="receipt_line1_hint">Address / phone line (tap to edit)</string>
+    <string name="receipt_footer_hint">Thank-you message (tap to edit)</string>
+    <string name="bill_sample">Name                  Qty     Price\nMilk Powder             2   Rs. 500.00\nWhite Bread             1   Rs. 120.00\n::::::::::::::::::::::::::::::::\nSub Total                 Rs. 620.00\nPaid by                         CASH</string>
+    <string name="receipt_label">Receipt</string>
+    <string name="date_label">Date</string>
+    <string name="col_name">Name</string>
+    <string name="col_qty">Qty</string>
+    <string name="col_unit_price">Unit Price</string>
+    <string name="col_amount">Amount (%1$s)</string>
+
+    <string name="bill_separator_dash">------------------------------------------</string>
+    <string name="bill_separator_star">************************</string>
+    <string name="sample_date">09 Aug 2026, 14:30</string>
+    <string name="sample_unit">pcs</string>
+    <string name="col_amount_with_currency">Amount (Rs.)</string>
+    <string name="discount_format">− %1$s</string>
+    <string name="total_format">%1$s: %2$s</string>
+    <string name="subtotal_format">%1$s: %2$s</string>
+    <string name="unit_pcs">pcs</string>
+</resources>
+

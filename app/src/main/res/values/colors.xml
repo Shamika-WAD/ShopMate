@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors - change these to re-skin the whole app -->
+    <color name="primary">#2E7D32</color>
+    <color name="primary_dark">#1B5E20</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#C8E6C9</color>
+    <color name="secondary">#EF6C00</color>
+
+    <!-- Semantic colors used by alerts / stock states -->
+    <color name="warning">#E65100</color>
+    <color name="danger">#C62828</color>
+
+    <color name="scrim">#80000000</color>
+    <color name="Black">#000000</color>
+</resources>

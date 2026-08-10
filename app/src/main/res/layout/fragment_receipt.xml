@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- The bill itself lives in bill_preview.xml (included here).
+             No android:id on <include> so its inner views stay directly
+             reachable from the fragment's view binding. -->
+        <include
+            android:id="@+id/billPreview"
+            layout="@layout/bill_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrintReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/print"
+            app:icon="@drawable/ic_printer" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShareReceipt"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/share"
+            app:icon="@drawable/ic_share" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDoneReceipt"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/done" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

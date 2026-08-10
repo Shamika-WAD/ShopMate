@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="2dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="Coca-Cola 500ml" />
+
+            <TextView
+                android:id="@+id/tvUnitPrice"
+                style="@style/TextAppearance.Material3.BodySmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="Rs. 220.00 each" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnMinus"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/delete"
+            android:src="@drawable/ic_minus"
+            app:tint="?attr/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvQty"
+            style="@style/TextAppearance.Material3.TitleSmall"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:text="2" />
+
+        <ImageButton
+            android:id="@+id/btnPlus"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/add"
+            android:src="@drawable/ic_add"
+            app:tint="?attr/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvLineTotal"
+            style="@style/TextAppearance.Material3.TitleSmall"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="end"
+            android:textStyle="bold"
+            tools:text="440.00" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One sold item as a 3-column row: Name | Qty | Price (supermarket style) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="3dp">
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#222222"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvItemUnitPrice"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="#222222"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvItemQty"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="#222222"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvItemAmount"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="#222222"
+        android:textSize="13sp" />
+</LinearLayout>

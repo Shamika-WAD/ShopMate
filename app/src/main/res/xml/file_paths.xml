@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Folders the FileProvider is allowed to share (used for CSV exports) -->
+<paths>
+    <cache-path name="exports" path="exports/" />
+    <cache-path name="receipts" path="receipts/" />
+</paths>

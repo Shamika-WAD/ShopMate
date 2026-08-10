@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.shopmate.app.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_billingFragment"
+            app:destination="@id/billingFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_productFormFragment"
+            app:destination="@id/productFormFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_alertsFragment"
+            app:destination="@id/alertsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_salesFragment"
+            app:destination="@id/salesFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.shopmate.app.ui.inventory.InventoryFragment"
+        android:label="@string/nav_inventory">
+        <action
+            android:id="@+id/action_inventoryFragment_to_productFormFragment"
+            app:destination="@id/productFormFragment" />
+    </fragment>
+
+    <!-- productId = -1 means "new product"; prefillBarcode fills the barcode box -->
+    <fragment
+        android:id="@+id/productFormFragment"
+        android:name="com.shopmate.app.ui.inventory.ProductFormFragment"
+        android:label="@string/screen_product">
+        <argument
+            android:name="productId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <argument
+            android:name="prefillBarcode"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_productFormFragment_to_scannerFragment"
+            app:destination="@id/scannerFragment" />
+        <action
+            android:id="@+id/action_productFormFragment_to_barcodeFragment"
+            app:destination="@id/barcodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/billingFragment"
+        android:name="com.shopmate.app.ui.billing.BillingFragment"
+        android:label="@string/nav_billing">
+        <action
+            android:id="@+id/action_billingFragment_to_scannerFragment"
+            app:destination="@id/scannerFragment" />
+        <action
+            android:id="@+id/action_billingFragment_to_productFormFragment"
+            app:destination="@id/productFormFragment" />
+        <action
+            android:id="@+id/action_billingFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scannerFragment"
+        android:name="com.shopmate.app.ui.scanner.ScannerFragment"
+        android:label="@string/screen_scan" />
+
+    <fragment
+        android:id="@+id/alertsFragment"
+        android:name="com.shopmate.app.ui.alerts.AlertsFragment"
+        android:label="@string/nav_alerts">
+        <action
+            android:id="@+id/action_alertsFragment_to_productFormFragment"
+            app:destination="@id/productFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/salesFragment"
+        android:name="com.shopmate.app.ui.sales.SalesHistoryFragment"
+        android:label="@string/nav_sales">
+        <action
+            android:id="@+id/action_salesFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+    </fragment>
+
+    <!-- Bill preview shown after checkout / from sales history -->
+    <fragment
+        android:id="@+id/receiptFragment"
+        android:name="com.shopmate.app.ui.receipt.ReceiptFragment"
+        android:label="@string/receipt">
+        <argument
+            android:name="saleId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_receiptFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <!-- Generated barcode image for a product -->
+    <fragment
+        android:id="@+id/barcodeFragment"
+        android:name="com.shopmate.app.ui.barcode.BarcodeFragment"
+        android:label="@string/barcode_title">
+        <argument
+            android:name="productId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.shopmate.app.ui.settings.SettingsFragment"
+        android:label="@string/settings" />
+
+</navigation>

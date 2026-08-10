@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Item ids MUST match the destination ids in nav_graph.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_grid"
+        android:title="@string/nav_dashboard" />
+    <item
+        android:id="@+id/inventoryFragment"
+        android:icon="@drawable/ic_archive"
+        android:title="@string/nav_inventory" />
+    <item
+        android:id="@+id/billingFragment"
+        android:icon="@drawable/ic_receipt"
+        android:title="@string/nav_billing" />
+    <item
+        android:id="@+id/alertsFragment"
+        android:icon="@drawable/ic_bell"
+        android:title="@string/nav_alerts" />
+    <item
+        android:id="@+id/salesFragment"
+        android:icon="@drawable/ic_chart_bar"
+        android:title="@string/nav_sales" />
+</menu>
